@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>OXO Version 1.0</title>
+        <style>
+            #game {
+                width: auto;
+                height: auto;
+                position: relative;
+            }
+
+            #info_bar {
+                width: 100%;
+                height: 100px;
+                border: 3px solid blueviolet;
+            }
+
+            #score {
+                width: 100%;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                font-style: italic;
+                font-size: x-large;
+            }
+
+            #players {
+                width: 100%;
+                height: 60px;
+                position: relative;
+                display: flex;
+            }
+
+            #controls {
+                width: 33%;
+                height: 100%;
+                text-align: center;
+                line-height: 60px;
+            }
+
+            .player_move {
+                width: 33%;
+                height: 100%;
+                text-align: center;
+                line-height: 60px;
+                font-style: italic;
+                font-size: xx-large;
+            }
+
+            #board {
+                width: 420px;
+                height: 420px;
+                border: solid 5px black;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+            }
+
+            .row {
+                width: 100%;
+                height: 140px;
+                display: flex;
+            }
+
+            .cell {
+                border: 2px solid black;
+                width: 138px;
+                height: 138px;
+                line-height: 138px;
+                font-size: 60px;
+                font-weight: bold;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="game">
+            <div id="info_bar">
+                <div id="score">0-0</div>
+                <div id="players">
+                    <div class="player_move">IKSIK</div>
+                    <div id="controls">
+                        <button id="startOverBtn">Start Over</button>
+                        <button id="nextRoundBtn">Next Round</button>
+                    </div>
+                    <div class="player_move">NOLIK</div>
+                </div>
+            </div>
+            <div id="board">
+                <div class="row">
+                    <div class="cell" r="0" c="0"></div>
+                    <div class="cell" r="0" c="1"></div>
+                    <div class="cell" r="0" c="2"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" r="1" c="0"></div>
+                    <div class="cell" r="1" c="1"></div>
+                    <div class="cell" r="1" c="2"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" r="2" c="0"></div>
+                    <div class="cell" r="2" c="1"></div>
+                    <div class="cell" r="2" c="2"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="oxo.js"></script>
+    </body>
+</html>
